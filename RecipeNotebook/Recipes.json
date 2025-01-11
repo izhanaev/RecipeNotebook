@@ -1,0 +1,283 @@
+[
+    {
+    "id": 1,
+    "title": "Spaghetti Carbonara 🇮🇹",
+    "image": "SpaghettiCarbonara",
+    "description": "A classic Roman pasta dish made with eggs, cheese, pancetta, and black pepper.",
+    "steps": [
+        {
+            "id": 1,
+            "description": "Cook spaghetti in salted boiling water."
+        },
+        {
+            "id": 2,
+            "description": "Fry pancetta or guanciale until crispy."
+        },
+        {
+            "id": 3,
+            "description": "Beat eggs with grated Parmesan or Pecorino cheese."
+        },
+        {
+            "id": 4,
+            "description": "Drain the pasta, reserving some cooking water, then combine with pancetta."
+        },
+        {
+            "id": 5,
+            "description": "Mix in the egg mixture, adding cooking water as needed to create a creamy sauce. Season with black pepper."
+        }
+    ]
+},
+    {
+    "id": 2,
+    "title": "Sushi 🇯🇵",
+    "image": "Sushi",
+    "description": "A traditional Japanese dish of vinegared rice accompanied by raw fish, vegetables, or other ingredients.",
+    "steps": [
+        {
+            "id": 1,
+            "description": "Cook sushi rice and season with rice vinegar, sugar, and salt."
+        },
+        {
+            "id": 2,
+            "description": "Slice fresh fish like tuna or salmon thinly."
+        },
+        {
+            "id": 3,
+            "description": "Lay out a seaweed sheet and spread a thin layer of rice over it."
+        },
+        {
+            "id": 4,
+            "description": "Add fillings such as fish, avocado, or cucumber."
+        },
+        {
+            "id": 5,
+            "description": "Roll it up tightly and slice into bite-sized pieces. Serve with soy sauce and wasabi."
+        }
+    ]
+},
+    {
+    "id": 3,
+    "title": "Paella 🇪🇸",
+    "image": "Paella",
+    "description": "A saffron-flavored rice dish traditionally made with seafood, chicken, and vegetables.",
+    "steps": [
+        {
+            "id": 1,
+            "description": "Saute onions, garlic, and bell peppers in olive oil."
+        },
+        {
+            "id": 2,
+            "description": "Add chicken and/or seafood (shrimp, mussels, etc.)."
+        },
+        {
+            "id": 3,
+            "description": "Stir in rice and saffron threads, then pour in broth."
+        },
+        {
+            "id": 4,
+            "description": "Simmer until the rice absorbs the liquid."
+        },
+        {
+            "id": 5,
+            "description": "Garnish with fresh parsley and lemon wedges."
+        }
+    ]
+},
+    {
+    "id": 4,
+    "title": "Peking Duck 🇨🇳",
+    "image": "PekingDuck",
+    "description": "A famous Chinese dish featuring crispy roasted duck served with pancakes and hoisin sauce.",
+    "steps": [
+        {
+            "id": 1,
+            "description": "Marinate the duck with Chinese five-spice powder, soy sauce, and honey."
+        },
+        {
+            "id": 2,
+            "description": "Dry the duck for several hours to achieve a crispy skin."
+        },
+        {
+            "id": 3,
+            "description": "Roast the duck in a hot oven until the skin turns golden and crisp."
+        },
+        {
+            "id": 4,
+            "description": "Slice thin pieces of duck, including both meat and skin."
+        },
+        {
+            "id": 5,
+            "description": "Serve with thin pancakes, hoisin sauce, and sliced cucumbers and scallions."
+        }
+    ]
+},
+    {
+    "id": 5,
+    "title": "Butter Chicken 🇮🇳",
+    "image": "ButterChicken",
+    "description": "A rich and creamy curry made with marinated chicken cooked in a tomato-based sauce.",
+    "steps": [
+        {
+            "id": 1,
+            "description": "Marinate chicken in yogurt, garlic, ginger, and spices (cumin, garam masala, turmeric)."
+        },
+        {
+            "id": 2,
+            "description": "Grill or saute the chicken until cooked."
+        },
+        {
+            "id": 3,
+            "description": "In a separate pan, cook onions, tomatoes, and spices, then blend into a smooth sauce."
+        },
+        {
+            "id": 4,
+            "description": "Add butter, cream, and cooked chicken to the sauce."
+        },
+        {
+            "id": 5,
+            "description": "Simmer and serve with naan or basmati rice."
+        }
+    ]
+},
+    {
+    "id": 6,
+    "title": "Beef Bourguignon 🇫🇷",
+    "image": "BeefBourguignon",
+    "description": "A slow-cooked beef stew made with red wine, mushrooms, onions, and bacon.",
+    "steps": [
+        {
+            "id": 1,
+            "description": "Brown beef cubes in a large pot with olive oil."
+        },
+        {
+            "id": 2,
+            "description": "Saute onions, carrots, and garlic in the same pot."
+        },
+        {
+            "id": 3,
+            "description": "Add red wine, beef stock, and herbs (bay leaf, thyme)."
+        },
+        {
+            "id": 4,
+            "description": "Simmer for 2-3 hours until the beef is tender."
+        },
+        {
+            "id": 5,
+            "description": "Add mushrooms and bacon in the final 30 minutes of cooking."
+        }
+    ]
+},
+    {
+    "id": 7,
+    "title": "Tacos 🇲🇽",
+    "image": "Tacos",
+    "description": "Corn or wheat tortillas filled with a variety of ingredients like meat, cheese, beans, and salsa.",
+    "steps": [
+        {
+            "id": 1,
+            "description": "Cook seasoned ground beef, chicken, or pork with spices like cumin and chili powder."
+        },
+        {
+            "id": 2,
+            "description": "Warm soft tortillas or crisp them on a skillet."
+        },
+        {
+            "id": 3,
+            "description": "Fill tortillas with cooked meat, shredded lettuce, cheese, and salsa."
+        },
+        {
+            "id": 4,
+            "description": "Top with sour cream, avocado, or cilantro."
+        },
+        {
+            "id": 5,
+            "description": "Serve immediately with lime wedges."
+        }
+    ]
+},
+    {
+    "id": 8,
+    "title": "Pad Thai 🇹🇭",
+    "image": "PadThai",
+    "description": "A stir-fried noodle dish with shrimp, tofu, eggs, and peanuts, seasoned with tamarind sauce.",
+    "steps": [
+        {
+            "id": 1,
+            "description": "Soak rice noodles in warm water until soft."
+        },
+        {
+            "id": 2,
+            "description": "Stir-fry shrimp or tofu in a hot wok with garlic and shallots."
+        },
+        {
+            "id": 3,
+            "description": "Add beaten eggs, then scramble them in the wok."
+        },
+        {
+            "id": 4,
+            "description": "Stir in noodles, tamarind paste, fish sauce, and palm sugar."
+        },
+        {
+            "id": 5,
+            "description": "Top with crushed peanuts, bean sprouts, and lime wedges."
+        }
+    ]
+},
+    {
+    "id": 9,
+    "title": "Moussaka 🇬🇷",
+    "image": "Moussaka",
+    "description": "A layered casserole made with eggplant, minced meat, and bechamel sauce.",
+    "steps": [
+        {
+            "id": 1,
+            "description": "Fry slices of eggplant until soft and golden."
+        },
+        {
+            "id": 2,
+            "description": "Cook ground lamb or beef with onions, garlic, and tomatoes."
+        },
+        {
+            "id": 3,
+            "description": "Layer the eggplant and meat mixture in a baking dish."
+        },
+        {
+            "id": 4,
+            "description": "Prepare a bechamel sauce (butter, flour, milk) and pour it over the top."
+        },
+        {
+            "id": 5,
+            "description": "Bake until golden and bubbly, then let it rest before serving."
+        }
+    ]
+},
+    {
+    "id": 10,
+    "title": "Clam Chowder 🇺🇸",
+    "image": "ClamChowder",
+    "description": "A creamy soup made with clams, potatoes, onions, and bacon.",
+    "steps": [
+        {
+            "id": 1,
+            "description": "Saute bacon, onions, and celery in a pot until soft."
+        },
+        {
+            "id": 2,
+            "description": "Add diced potatoes and clam juice, then simmer until potatoes are tender."
+        },
+        {
+            "id": 3,
+            "description": "Stir in clams and cream, and heat gently without boiling."
+        },
+        {
+            "id": 4,
+            "description": "Season with salt, pepper, and thyme."
+        },
+        {
+            "id": 5,
+            "description": "Serve with oyster crackers or crusty bread."
+        }
+    ]
+}
+]
+

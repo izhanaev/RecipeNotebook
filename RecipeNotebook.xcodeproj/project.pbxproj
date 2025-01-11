@@ -10,9 +10,22 @@
 		9C19D4352D32991900D81FD8 /* RecipeNotebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeNotebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		9C19D45C2D329B6B00D81FD8 /* Exceptions for "RecipeNotebook" folder in "Compile Sources" phase from "RecipeNotebook" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 9C19D4312D32991900D81FD8 /* Sources */;
+			membershipExceptions = (
+				Recipes.json,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9C19D4372D32991900D81FD8 /* RecipeNotebook */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9C19D45C2D329B6B00D81FD8 /* Exceptions for "RecipeNotebook" folder in "Compile Sources" phase from "RecipeNotebook" target */,
+			);
 			path = RecipeNotebook;
 			sourceTree = "<group>";
 		};
