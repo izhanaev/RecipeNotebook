@@ -27,6 +27,15 @@ struct RecipeNoteScreen: View {
                 .font(.title3)
                 .multilineTextAlignment(.center)
             Spacer()
+            NavigationLink(destination: CurrentRecipeNoteScreen(recipe: recipe)) {
+                            Text("View Cooking Steps")
+                                .font(.headline)
+                                .padding()
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(8)
+                        }
+                        .padding(.bottom, 20)
         }
         .padding(.top, 20)
     }
