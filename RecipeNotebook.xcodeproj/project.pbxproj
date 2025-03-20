@@ -6,27 +6,71 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9CD3A08E2D8C256E0040A658 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD3A08D2D8C256E0040A658 /* XCTest.framework */; platformFilter = ios; };
+		9CD3A08F2D8C256E0040A658 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9CD3A08D2D8C256E0040A658 /* XCTest.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CD3A0822D8C24B00040A658 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C19D42D2D32991900D81FD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C19D4342D32991900D81FD8;
+			remoteInfo = RecipeNotebook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9CD3A0902D8C256E0040A658 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9CD3A08F2D8C256E0040A658 /* XCTest.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9C19D4352D32991900D81FD8 /* RecipeNotebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeNotebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD3A07E2D8C24B00040A658 /* RecipeNotebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeNotebookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CD3A08D2D8C256E0040A658 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		9C19D45C2D329B6B00D81FD8 /* Exceptions for "RecipeNotebook" folder in "Compile Sources" phase from "RecipeNotebook" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 9C19D4312D32991900D81FD8 /* Sources */;
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9C9158D22D8C25EC00D7DDAA /* Exceptions for "RecipeNotebook" folder in "RecipeNotebook" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Recipes.json,
+				RecipeNotebookTests/RecipeTests.swift,
 			);
+			target = 9C19D4342D32991900D81FD8 /* RecipeNotebook */;
 		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		9CD3A08B2D8C250B0040A658 /* Exceptions for "RecipeNotebook" folder in "RecipeNotebookTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				RecipeNotebookTests/RecipeTests.swift,
+			);
+			target = 9CD3A07D2D8C24B00040A658 /* RecipeNotebookTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9C19D4372D32991900D81FD8 /* RecipeNotebook */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				9C19D45C2D329B6B00D81FD8 /* Exceptions for "RecipeNotebook" folder in "Compile Sources" phase from "RecipeNotebook" target */,
+				9C9158D22D8C25EC00D7DDAA /* Exceptions for "RecipeNotebook" folder in "RecipeNotebook" target */,
+				9CD3A08B2D8C250B0040A658 /* Exceptions for "RecipeNotebook" folder in "RecipeNotebookTests" target */,
 			);
 			path = RecipeNotebook;
+			sourceTree = "<group>";
+		};
+		9CD3A07F2D8C24B00040A658 /* RecipeNotebookTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = RecipeNotebookTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -39,6 +83,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CD3A07B2D8C24B00040A658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CD3A08E2D8C256E0040A658 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -46,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				9C19D4372D32991900D81FD8 /* RecipeNotebook */,
+				9CD3A07F2D8C24B00040A658 /* RecipeNotebookTests */,
+				9CD3A08C2D8C256E0040A658 /* Frameworks */,
 				9C19D4362D32991900D81FD8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,8 +108,17 @@
 			isa = PBXGroup;
 			children = (
 				9C19D4352D32991900D81FD8 /* RecipeNotebook.app */,
+				9CD3A07E2D8C24B00040A658 /* RecipeNotebookTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9CD3A08C2D8C256E0040A658 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CD3A08D2D8C256E0040A658 /* XCTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +146,30 @@
 			productReference = 9C19D4352D32991900D81FD8 /* RecipeNotebook.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9CD3A07D2D8C24B00040A658 /* RecipeNotebookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CD3A0862D8C24B00040A658 /* Build configuration list for PBXNativeTarget "RecipeNotebookTests" */;
+			buildPhases = (
+				9CD3A07A2D8C24B00040A658 /* Sources */,
+				9CD3A07B2D8C24B00040A658 /* Frameworks */,
+				9CD3A07C2D8C24B00040A658 /* Resources */,
+				9CD3A0902D8C256E0040A658 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CD3A0832D8C24B00040A658 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9CD3A07F2D8C24B00040A658 /* RecipeNotebookTests */,
+			);
+			name = RecipeNotebookTests;
+			packageProductDependencies = (
+			);
+			productName = RecipeNotebookTests;
+			productReference = 9CD3A07E2D8C24B00040A658 /* RecipeNotebookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +182,10 @@
 				TargetAttributes = {
 					9C19D4342D32991900D81FD8 = {
 						CreatedOnToolsVersion = 16.2;
+					};
+					9CD3A07D2D8C24B00040A658 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 9C19D4342D32991900D81FD8;
 					};
 				};
 			};
@@ -113,12 +204,20 @@
 			projectRoot = "";
 			targets = (
 				9C19D4342D32991900D81FD8 /* RecipeNotebook */,
+				9CD3A07D2D8C24B00040A658 /* RecipeNotebookTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9C19D4332D32991900D81FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CD3A07C2D8C24B00040A658 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +234,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CD3A07A2D8C24B00040A658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CD3A0832D8C24B00040A658 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C19D4342D32991900D81FD8 /* RecipeNotebook */;
+			targetProxy = 9CD3A0822D8C24B00040A658 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9C19D4412D32991B00D81FD8 /* Debug */ = {
@@ -267,6 +381,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RecipeNotebook/Preview Content\"";
 				DEVELOPMENT_TEAM = DR4CL7C7Q4;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,6 +412,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RecipeNotebook/Preview Content\"";
 				DEVELOPMENT_TEAM = DR4CL7C7Q4;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -317,6 +433,44 @@
 			};
 			name = Release;
 		};
+		9CD3A0842D8C24B00040A658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DR4CL7C7Q4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyaszhanaev.RecipeNotebookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeNotebook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecipeNotebook";
+			};
+			name = Debug;
+		};
+		9CD3A0852D8C24B00040A658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DR4CL7C7Q4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilyaszhanaev.RecipeNotebookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeNotebook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RecipeNotebook";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +488,15 @@
 			buildConfigurations = (
 				9C19D4442D32991B00D81FD8 /* Debug */,
 				9C19D4452D32991B00D81FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CD3A0862D8C24B00040A658 /* Build configuration list for PBXNativeTarget "RecipeNotebookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CD3A0842D8C24B00040A658 /* Debug */,
+				9CD3A0852D8C24B00040A658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
