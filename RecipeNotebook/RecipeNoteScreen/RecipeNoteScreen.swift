@@ -10,11 +10,19 @@ import SwiftUI
 struct RecipeNoteScreen: View {
 
     @State private var isImageScaled = false
+    @AppStorage private var isFavorite: Bool
+
     var recipe: Recipe
-    
+
+    init(recipe: Recipe) {
+        self.recipe = recipe
+        // Создаем уникальный ключ для @AppStorage на основе recipe.id
+        self._isFavorite = AppStorage(wrappedValue: false, "isFavorite_\(recipe.id)")
+    }
+
     var body: some View {
         VStack {
-            Text(recipe.title)
+            Text("\(isFavorite ? "⭐️" : "")" + "\(recipe.title)")
                 .font(.title)
                 .fontWeight(.semibold)
                 .padding(.bottom, 20)
@@ -33,17 +41,25 @@ struct RecipeNoteScreen: View {
                 .font(.title3)
                 .multilineTextAlignment(.center)
             Spacer()
+
+            Button {
+                isFavorite.toggle()
+            } label: {
+                Text(isFavorite ? "Remove from Favorites" : "Make Favorite ⭐️")
+            }
+
             NavigationLink(destination: CurrentRecipeNoteScreen(recipe: recipe)) {
-                            Text("View Cooking Steps")
-                                .font(.headline)
-                                .padding()
-                                .background(Color.blue)
-                                .foregroundColor(.white)
-                                .cornerRadius(8)
-                        }
-                        .padding(.bottom, 20)
+                Text("View Cooking Steps")
+                    .font(.headline)
+                    .padding()
+                    .background(Color.blue)
+                    .foregroundColor(.white)
+                    .cornerRadius(8)
+            }
+            .padding(.bottom, 20)
         }
         .padding(.top, 20)
+        .padding(.horizontal, 16)
     }
 }
 
