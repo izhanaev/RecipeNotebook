@@ -16,7 +16,6 @@ struct RecipeNoteScreen: View {
 
     init(recipe: Recipe) {
         self.recipe = recipe
-        // Создаем уникальный ключ для @AppStorage на основе recipe.id
         self._isFavorite = AppStorage(wrappedValue: false, "isFavorite_\(recipe.id)")
     }
 
