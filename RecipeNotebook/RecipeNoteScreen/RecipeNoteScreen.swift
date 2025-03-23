@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct RecipeNoteScreen: View {
-    
+
+    @State private var isImageScaled = false
     var recipe: Recipe
     
     var body: some View {
@@ -22,6 +23,11 @@ struct RecipeNoteScreen: View {
                 .frame(width: 300, height: 300)
                 .scaledToFit()
                 .clipShape(.circle)
+                .scaleEffect(isImageScaled ? 1.0 : 0.8)
+                .animation(.easeInOut(duration: 1), value: isImageScaled)
+                .onAppear {
+                    isImageScaled = true
+                }
                 .padding(.bottom, 20)
             Text(recipe.description)
                 .font(.title3)
