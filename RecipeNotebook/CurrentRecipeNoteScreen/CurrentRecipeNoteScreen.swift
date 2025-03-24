@@ -12,7 +12,7 @@ struct CurrentRecipeNoteScreen: View {
 
     var body: some View {
         List(recipe.steps, id: \.id) { step in
-            VStack(alignment: .leading) {
+            LazyVStack(alignment: .leading) {
                 Text("Step \(step.id):")
                     .font(.headline)
                 Text(step.description)
@@ -22,12 +22,6 @@ struct CurrentRecipeNoteScreen: View {
             .padding(.vertical, 5)
         }
         .navigationTitle("\(recipe.title) - Steps")
-    }
-}
-
-struct CurrentRecipeNoteScreen_Previews: PreviewProvider {
-    static var previews: some View {
-        CurrentRecipeNoteScreen(recipe: RecipeListScreen().readJSON()[0])
     }
 }
 

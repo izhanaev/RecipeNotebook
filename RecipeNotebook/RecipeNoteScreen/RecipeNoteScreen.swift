@@ -61,11 +61,3 @@ struct RecipeNoteScreen: View {
         .padding(.horizontal, 16)
     }
 }
-
-struct RecipeDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            RecipeNoteScreen(recipe: RecipeListScreen().readJSON()[0])
-        }
-    }
-}
